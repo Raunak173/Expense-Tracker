@@ -1,24 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from './Pages/Home/Home';
+import AddExpense from "./Pages/AddExpense/AddExpense"
+import {BrowserRouter as Router,Route,Switch} from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="header">
+        <h1>Expense Tracker</h1>
+      </div>
+      <Switch>
+        <Route exact path='/' component={Home}/>
+        <Route exact path='/add-exp' component={AddExpense}/>
+      </Switch>
+      <div className="footer">
+        <p>Developed by Raunak Agarwal</p>
+      </div>
+    </Router>
   );
 }
 

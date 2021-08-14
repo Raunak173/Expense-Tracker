@@ -1,0 +1,80 @@
+.app-container{
+    background-color:grey;
+    width: 80%;
+    height: 70vh;
+    margin: auto;
+    margin-top: 3%;
+    border: 3px solid black;
+    color: black;
+}
+
+.btn-2{
+    height: 6vh;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn{
+    margin: 1% -12%;
+    padding: 10% 16%;
+    width: 7vw;
+}
+
+.btn-link{
+    margin: 1% 22%;
+    padding: 10% 16%;
+    width: 7vw;
+}
+
+.form-container{
+    width: 60vw;
+    /* height: 50vh; */
+    margin: 13vh auto 10vh auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid black;
+}
+
+.inp-box{
+    height: 3vh;
+    width: 65%;
+    padding: 2% 2%;
+    border-left: 3px solid black;
+}
+
+.label{
+    font-weight: 1000;
+    font-size: 3vh;
+    padding: 1%;
+    color: yellow;
+}
+
+.sub{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub button{
+    padding: 2%;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width:512px){
+    .btn{
+        width: 12vw;
+    }
+    .btn-link{
+        margin: 1% 19%;
+        padding: 3% 10%;
+        width: 12vw;
+    }
+    .label{
+        font-size: 2vh;
+    }
+}
+
